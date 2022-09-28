@@ -1,4 +1,5 @@
 name = Node Property Block
 type = module
+description = Provides a block to display node title, date, author and other node properties.
 backdrop = 1.x
 package = Other
