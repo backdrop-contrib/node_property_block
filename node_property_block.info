@@ -1,0 +1,4 @@
+name = Node Property Block
+type = module
+backdrop = 1.x
+package = Other

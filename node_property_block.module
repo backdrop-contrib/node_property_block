@@ -1,0 +1,25 @@
+<?php
+/**
+ * @file
+ * Provide a block to display node properties.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function node_property_block_block_info() {
+  $blocks['node_property_block'] = array(
+    'info' => t('Node property'),
+    'description' => 'Displays a property from a referenced node.',
+    'class' => 'NodePropertyBlock',
+    'required contexts' => array('node' => 'node'),
+  );
+
+  return $blocks;
+}
+
+function node_property_block_autoload_info() {
+  return array(
+    'NodePropertyBlock' => 'node_property_block.block.inc',
+  );
+}
