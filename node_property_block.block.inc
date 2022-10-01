@@ -38,6 +38,7 @@ class NodePropertyBlock extends Block {
         'created' => t('Created'),
         'changed' => t('Changed'),
         'name' => t('Author username'),
+        'author_date' => t('Author and date from Content Type configuration'),
       ),
       '#default_value' => $settings['property'],
       '#description' => t('The node property to be displayed.'),
@@ -128,6 +129,10 @@ class NodePropertyBlock extends Block {
         $uid = $node->uid;
         $user = user_load($uid);
         return $user->name;
+      case 'author_date': 
+        $node_type = node_type_get_type($node->type);
+        return token_replace($node_type->settings['node_submitted_format'], array('node' => $node));
+        break;
       default:
         return $node->{$settings['property']};
     }
