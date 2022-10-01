@@ -1,7 +1,7 @@
 Node Property Block
 =============
 
-Provides a block to display node fields (properties) not available in other blocks. The provided fiels are: 
+Provides a block to display node fields (properties) not available in other blocks. The provided fields are: 
 - Title
 - Node ID
 - Revision ID
