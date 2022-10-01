@@ -1,7 +1,16 @@
 Node Property Block
 =============
 
-Provides a block to display node properties: title, node ID, revision ID, author uid, content type, created/posted date and changed date. In addition it can also display the username of the author.
+Provides a block to display node fields (properties) not available in other blocks. The provided fiels are: 
+- Title
+- Node ID
+- Revision ID
+- Author uid
+- Content type
+- Created/posted date
+- Changed date
+- Username of the author
+- The "Author and date information" defined in the Content Type configuration page, under the tab "Display settings"  
 
 Use
 ---
